@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alan Turing: The Enigmatic Codebreaker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Alan Turing</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#biography">Biography</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#lines">Famous Lines</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Alan Turing</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#biography" onclick="toggleMenu()">Biography</a></li>
+          <li><a href="#works" onclick="toggleMenu()">Works</a></li>
+          <li><a href="#lines" onclick="toggleMenu()">Famous Lines</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets copy/turing_profile.png" alt="John Doe profile picture" />
+      </div>
+
+      <div class="section__text">
+        <h1 class="title">Alan Turing</h1>
+        <p class="section__text__p1">The Enigmatic Codebreaker</p>
+        
+        <div class="btn-container">
+          <button class = "btn btn-color-2" onclick="location.href = 'https://en.wikipedia.org/wiki/Alan_Turing'">
+              Wikipedia
+          </button>
+
+          <button class = "btn btn-color-1" onclick="location.href = 'https://www.britannica.com/biography/Alan-Turing'">
+            Brittanica
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Who is Alan Turing?</p>
+      <h1 class="title">Basic Information</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets copy/About.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets copy/badge_icon.png"
+                alt="Name icon"
+                class="icon"
+              />
+              <h3>Full Name</h3>
+              <p>Alan Mathison Turing </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets copy/born_icon.png"
+                alt="Born icon"
+                class="icon"
+              />
+              <h3>Born</h3>
+              <p>June 23, 1912 <br>London, England</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets copy/died_icon.png"
+                alt="Death icon"
+                class="icon"
+              />
+              <h3>Died</h3>
+              <p>June 7, 1954 <br>Wilmslow, Cheshire (aged 41)</p>
+            </div>
+
+
+            <div class="details-container">
+              <img
+                src="./assets copy/field_of_study_icon.png"
+                alt="Study icon"
+                class="icon"
+              />
+              <h3>Subjects of Study</h3>
+              <p>morphogenesis, artificial intelligence, 
+                  <br>computer program, computability, 
+                  <br> decision problem</p>
+            </div>
+
+          </div>
+          <div class="text-container">
+            <p>
+              Alan Turing was a brilliant British mathematician, logician, 
+              and computer scientist who is often hailed as the father of 
+              modern computer science. Born in 1912, Turing made significant 
+              contributions to various fields, including mathematics, cryptanalysis, 
+              and artificial intelligence.
+
+              <br><br>During World War II, he played a crucial role in breaking the 
+              German Enigma code, a feat that is believed to have shortened the war
+              by several years. Turing's work laid the foundation for the development of electronic computers and the concept of artificial intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets copy/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#biography'"
+      />
+    </section>
+
+    <section id="biography">
+      <p class="section__text__p1">Exploring Alan Turing's</p>
+      <h1 class="title">Biography</h1>
+      <div class="biography-details-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1912</h3>
+                  <p>Alan Mathison Turing is born on June 23 in Maida Vale, London, England.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1931-1934</h3>
+                  <p>Turing attends King's College, Cambridge, where he studies mathematics.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1936</h3>
+                  <p>He publishes "On Computable Numbers, with an Application to the Entscheidungsproblem," now known as the Turing machine.</p>
+                </div>
+              </article>
+            </div>
+          </div>  
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1939-1945</h3>
+                  <p>During World War II, Turing served as a codebreaker at the Government Code and Cypher School.</p>
+                </div>
+              </article>
+            </div>
+          </div>  
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1945-1948</h3>
+                  <p>After the war, Turing works on the design of electronic computers at the National Physical Laboratory.</p>
+                </div>
+              </article>
+            </div>
+          </div>  
+          
+        </div>
+      </div>
+
+      <div class="biography-details-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1948</h3>
+                  <p>He is appointed Deputy Director of the Computing Laboratory at the University of Manchester.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1950</h3>
+                  <p>
+                    Turing publishes "Computing Machinery and Intelligence," to assess machine intelligence.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1952</h3>
+                  <p> Turing faces prosecution for homosexuality, a crime in the UK at the time.
+
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>  
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>1954</h3>
+                  <p>Alan Turing passes away on June 7, at the age of 41, from cyanide poisoning.</p>
+                </div>
+              </article>
+            </div>
+          </div>  
+
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src=".//assets copy/pin.png"
+                  alt="Biography icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>2013</h3>
+                  <p>
+                    
+The Queen pardons Turing posthumously for his conviction, citing his to science and society.</p>
+                </div>
+              </article>
+            </div>
+          </div>  
+          
+        </div>
+      </div>
+
+      <img
+        src="./assets copy/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#works'"
+      />
+    </section>
+
+    <section id="works">
+      <p class="section__text__p1">Alan Turing's</p>
+      <h1 class="title">Inventions</h1>
+      <div class="biography-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets copy/turing-machine.png"
+                alt="Turing Machine"
+                class="project-img"
+              />
+            </div>
+            <h2 class="biography-sub-title project-title">The Turing Machine</h2>
+            <p>Alan Turing's Turing machine, conceived in 1936, laid the groundwork 
+              for modern computing by proposing a theoretical device capable of 
+              executing algorithms.
+            </p><br>
+
+            <div class="btn-container">
+              <button
+                  class="btn btn-color-2 works-btn" 
+                  onclick="location.href='https://plato.stanford.edu/Entries/turing-machine/'">
+                  Learn More
+              </button><br><br>
+          </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets copy/bombe.jpg"
+                alt="The Bombe"
+                class="project-img"
+              />
+            </div>
+            <h2 class="biography-sub-title project-title">The Bombe</h2>
+            <p>The Bombe, invented by Alan Turing during World War II, was a crucial 
+              electromechanical device used by the Allies to decipher encrypted 
+              messages generated by the German Enigma machine. It played a pivotal 
+              role in the Allied victory, significantly shortening the war by 
+              providing vital intelligence.
+            </p><br>
+
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 works-btn" 
+                        onclick="location.href='https://www.britannica.com/topic/Bombe'">
+                        Learn More
+                    </button>
+                </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets copy/ATE.jpg"
+                alt="ACE"
+                class="project-img"
+              />
+            </div>
+            <h2 class="biography-sub-title project-title">Automatic Computing Engine</h2>
+            <p>
+              The Automatic Computing Engine (ACE), proposed by Alan Turing in 1945, 
+              was an early electronic stored-program computer design that laid the groundwork 
+              for modern computers by introducing the concept of a stored program and providing
+               a blueprint for subsequent computer architectures. </p><br>
+               <div class="btn-container">
+                <button 
+                    class="btn btn-color-2 works-btn" 
+                    onclick="location.href='https://academic.oup.com/book/32836'">
+                    Learn More
+                </button>
+            </div>
+      </div>
+        </div>
+      </div>
+      <img
+        src="./assets copy/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#lines'"
+      />
+    </section>
+
+    <section id="lines">
+      <p class="section__text__p1">Words of Wisdom From the Father of Theoretical Computer Science and Artificial Intelligence</p>
+      <h1 class="title">Quotes from Alan Turing</h1>
+      <div class="lines-info-upper-container">
+        <div class="lines-info-container">
+          <p>“We can only see a short distance ahead, but we can see plenty there that needs to be done.”</p>
+        </div>
+
+        <div class="lines-info-container">
+          <p>“Sometimes it's the very people who no one imagines anything of who do the things no one can imagine.”</p>
+        </div>
+
+        <div class="lines-info-container">
+          <p> “A computer would deserve to be called intelligent if it could deceive a human into believing that it was human."</p>
+        </div>
+      </div>
+
+
+    
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#lines">Famous Lines</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nica Zoe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
